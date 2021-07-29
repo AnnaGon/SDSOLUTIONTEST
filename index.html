@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <h1>Test</h1>
+        <form name="form1" action="" method="get">
+            <lable>Name/Value Pair</lable>
+            <div class="main">
+                <input id="item" rows="1" cols="10"  type="text" placeholder="Name=Value"  name="name">
+                <input type="button"  value="Add" class="btn">
+            </div>
+            <!-- END OF HEADER -->
+            
+            <!-- MESSAGE FORM -->
+            <lable>Name/Value Pair list</lable>
+            <div id="message-form" class="main">
+                <div class="form">       
+                    <ul id="my-list"></ul>
+                </div>
+                <div class="form__btns">
+                    <input type="button" onclick="sortName()" value="Sort by Name" class="btn">
+                    <input type="button" value="Sort by Value" class="btn">
+                    <input type="button" onclick="deleteBtn()" value="Delete" class="btn">
+                    <input type="button" value="Show XML" class="btn">
+                </div>
+            </form>
+        </div>
+        <!-- END OF MESSAGE FORM -->
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
